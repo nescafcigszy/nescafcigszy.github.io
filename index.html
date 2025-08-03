@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Notes/Caffeine</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main>
+    <h1>☕ Test Notes / Caffeine</h1>
+    
+    <section>
+      <h2>How's Your Day?</h2>
+      <input type="text" id="moodInput" placeholder="Type how your day is going..." />
+      <button onclick="logMood()">Log Mood</button>
+      <button onclick="resetMood()">Reset Mood Log</button>
+      <ul id="moodList"></ul>
+    </section>
+
+    <section>
+      <h2>Coffee Intake</h2>
+      <button onclick="logCoffee()">+1 Cup</button>
+      <button onclick="resetCoffee()">Reset Coffee Log</button>
+      <p id="coffeeCount"></p>
+    </section>
+
+    <section>
+      <h2>Reminders / Notes</h2>
+      <textarea id="noteInput" placeholder="Write something to remember..."></textarea>
+      <button onclick="logNote()">Add Note</button>
+      <button onclick="resetNotes()">Reset Notes</button>
+      <ul id="notesList"></ul>
+    </section>
+
+    <section>
+      <h2>🧠 Pattern Suggestion</h2>
+      <p id="pattern"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
